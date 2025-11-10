@@ -218,13 +218,13 @@ public with sharing class ClassesObjectsMethods {
             return null;
         }
         Map<String, Integer> dayNumMap = new Map<String, Integer>();
-            DayNumMap.put('Monday', 1);
-            DayNumMap.put('Tuesday', 2);
-            DayNumMap.put('Wednesday', 3);
-            DayNumMap.put('Thursday', 4);
-            DayNumMap.put('Friday', 5);
-            DayNumMap.put('Saturday', 6);
-            DayNumMap.put('Sunday', 7);
+            dayNumMap.put('Monday', 1);
+            dayNumMap.put('Tuesday', 2);
+            dayNumMap.put('Wednesday', 3);
+            dayNumMap.put('Thursday', 4);
+            dayNumMap.put('Friday', 5);
+            dayNumMap.put('Saturday', 6);
+            dayNumMap.put('Sunday', 7);
 
         // Get the day name using .format('EEEE');
         String dayName = dt.format('EEEE');
@@ -276,7 +276,7 @@ public with sharing class ClassesObjectsMethods {
             bookTitle = 'Code Complete: A Practical Handbook of Software Construction';
             bookAuthor = 'Steve McConnell';
         }
-        public book(String title, String author){
+        public Book(String title, String author){
             bookTitle = title;
             bookAuthor = author;
         }
